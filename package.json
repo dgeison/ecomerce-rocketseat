@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dgeison/init-back-end.git"
+    "url": "git+https://github.com/dgeison/ecomerce-rocketseat.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dgeison/init-back-end/issues"
+    "url": "https://github.com/dgeison/ecomerce-rocketseat/issues"
   },
-  "homepage": "https://github.com/dgeison/init-back-end#readme",
+  "homepage": "https://github.com/dgeison/ecomerce-rocketseat#readme",
   "dependencies": {
     "express": "^4.17.1",
     "method-override": "^3.0.0",
