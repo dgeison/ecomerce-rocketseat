@@ -32,9 +32,7 @@
 <div class="item">
     <div>Valor</div>
     <div>
-        <input type="text" name="price" placeholder="Digite valor" value='{{product.price}}' 
-        {# Faremos uma máscara de dinheiro #}
-        >
+        <input type="text" name="price" placeholder="Digite valor" value='{{product.price}}' onkeydown="Mask.apply(this, 'formatBRL')">
     </div>
     {% if product.old_price %}
         <input type="hidden" name="old_price" value="{{product.old_price}}">
@@ -49,18 +47,17 @@
 </div>
 
 {% if product.status %}
-<div class="item">
-    <div>Disponível</div>
-    <div>
-        <span>
-            <input type="radio" name="status" value="1" {% if product.status == "1" %} checked="checked" {% endif %}>
-            Sim
-        </span>
-        <span>
-            <input type="radio" name="status" value="0" {% if product.status == "0" %} checked="checked" {% endif %}>
-            Não
-        </span>
+    <div class="item">
+        <div>Disponível</div>
+        <div>
+            <span>
+                <input type="radio" name="status" value="1" {% if product.status == "1" %} checked="checked" {% endif %}>
+                Sim
+            </span>
+            <span>
+                <input type="radio" name="status" value="0" {% if product.status == "0" %} checked="checked" {% endif %}>
+                Não
+            </span>
+        </div>
     </div>
-</div>
 {% endif %}
-

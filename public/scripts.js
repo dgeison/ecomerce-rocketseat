@@ -15,7 +15,7 @@
 // });
 
 const Mask = {
-  aply() {
+  apply(input, func) {
     setTimeout(function () {
         input.value = Mask[func](input.value)
     },1);
@@ -29,3 +29,5 @@ const Mask = {
     }).format(value / 100);
   },
 };
+
+
