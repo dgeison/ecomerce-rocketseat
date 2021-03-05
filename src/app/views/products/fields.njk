@@ -32,7 +32,9 @@
 <div class="item">
     <div>Valor</div>
     <div>
-        <input type="text" name="price" placeholder="Digite valor" value='{{product.price}}' {# Faremos uma máscara de dinheiro #}>
+        <input type="text" name="price" placeholder="Digite valor" value='{{product.price}}' 
+        {# Faremos uma máscara de dinheiro #}
+        >
     </div>
     {% if product.old_price %}
         <input type="hidden" name="old_price" value="{{product.old_price}}">
